@@ -1,0 +1,73 @@
+{
+  // Nice to have for any repo:
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  // Better safe than sorry:
+  "git.useForcePushWithLease": true,
+
+  // Hide files from search and file picker:
+  "files.exclude": {
+    // Note: You can still enter exact path of any file, and vscode will then show it in file picker.
+    // node_modules, .git, etc are still ignored with vscode v1.63.2
+    // ".yarn/releases/*": true,
+    // "yarn.lock": true,
+  },
+
+  // Generic settings for our repo:
+  "editor.tabSize": 2,
+
+  // By default, format code with prettier onSave:
+  //  (md,scss,json...)
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable eslint vscode extension:
+  "eslint.enable": true,
+  "eslint.format.enable": false, // assert default
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.useEditorConfig": true,
+  "eslint.useESLintClass": true,
+  "eslint.packageManager": "npm",
+  "eslint.probe": [],
+  // Apologies if this affects any of your personal extensions - maybe we can add them into the repo?
+  "editor.codeActionsOnSave": {},
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "cSpell.words": [
+    "buildsghost",
+    "compat",
+    "npmjs",
+    "preinstall"
+  ]
+}

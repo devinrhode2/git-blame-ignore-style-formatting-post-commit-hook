@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "include": ["bin/*"],
+  "extends": "./tsconfig.strictest.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "noEmit": true,
+    "moduleResolution": "node",
+    "incremental": true,
+    "allowUmdGlobalAccess": true
+  }
+}

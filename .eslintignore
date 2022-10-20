@@ -1,0 +1,7 @@
+# REST OF FILE IS SHARED ESLINT/PRETTIER/GIT UNIVERAL IGNORE
+# THIS CODE IS COPY/PASTED BETWEEN THE THREE FILES :(
+# https://github.com/prettier/prettier/issues/8048#issuecomment-1108274919
+
+# For vscode users with the "Local History" extension:
+node_modules
+.history
