@@ -53,7 +53,6 @@ if (isStyleCommit) {
     execSync(
       `npm pkg set scripts.preinstall="${setupGitBlameIgnoreRevsCmd}"; git add package.json`,
     )
-    // console.warn("Don't forget to create a process to run `git blame --ignore-revs-file .git-blame-ignore-revs`, likely in a pre-install hook.");
     console.log(
       'Created empty .git-blame-ignore-revs file, and preinstall script to configure git to use it.',
     )
