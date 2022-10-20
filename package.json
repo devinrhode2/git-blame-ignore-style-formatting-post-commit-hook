@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "git config --local blame.ignoreRevsFile .git-blame-ignore-revs || echo 'not a git repo, skipping git blame config'"
   },
   "repository": {
     "type": "git",
