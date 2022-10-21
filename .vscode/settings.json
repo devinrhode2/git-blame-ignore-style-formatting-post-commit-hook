@@ -68,6 +68,8 @@
     "buildsghost",
     "compat",
     "npmjs",
+    "pinst",
+    "postpack",
     "preinstall"
   ]
 }
