@@ -1,5 +1,7 @@
 # Automatically git-blame-ignore style tweaks
 
+[![.github/workflows/github-actions.yml](https://github.com/devinrhode2/git-blame-ignore-style-formatting-post-commit-hook/actions/workflows/github-actions.yml/badge.svg)](https://github.com/devinrhode2/git-blame-ignore-style-formatting-post-commit-hook/actions/workflows/github-actions.yml)
+
 ## A post-commit hook to add an entry to .git-blame-ignore-revs for pure formatting commits
 
 Now you can upgrade to prettier v2 without ruining git blame!
