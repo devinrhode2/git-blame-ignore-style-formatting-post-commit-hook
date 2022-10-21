@@ -1,0 +1,45 @@
+{
+  "name": "git-blame-ignore-style-formatting-post-commit-hook",
+  "version": "0.0.1",
+  "description": "post-commit hook to add an entry to .git-blame-ignore-revs for `style: foo` commits",
+  "main": "index.js",
+  "bin": {
+    "git-blame-ignore-style-formatting-post-commit-hook": "./bin/git-blame-ignore-style-formatting-post-commit-hook"
+  },
+  "files": [
+    "bin/*",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "preinstall": "git config --local blame.ignoreRevsFile .git-blame-ignore-revs || echo 'not a git repo, skipping git blame config'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinrhode2/git-blame-ignore-style-formatting-post-commit-hook.git"
+  },
+  "keywords": [
+    "git",
+    "blame",
+    "ignore",
+    "style",
+    "formatting",
+    "prettier",
+    "post",
+    "commit",
+    "hook",
+    "husky"
+  ],
+  "author": "devinrhode2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devinrhode2/git-blame-ignore-style-formatting-post-commit-hook/issues"
+  },
+  "homepage": "https://github.com/devinrhode2/git-blame-ignore-style-formatting-post-commit-hook#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.68",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1"
+  }
+}

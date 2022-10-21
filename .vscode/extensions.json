@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    // https://github.com/prettier/prettier-vscode/issues/1555
+    "rohit-gohri.format-code-action",
+
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

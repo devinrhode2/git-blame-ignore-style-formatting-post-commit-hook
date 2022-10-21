@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+GIT_ROOT="$(git rev-parse --show-toplevel)"
+
+# This is NOT exactly what the README.md produces
+# The following line is tweaked to point directly to our own file: `./bin/git-blame-ignore-style-formatting-post-commit-hook`
+$GIT_ROOT/bin/git-blame-ignore-style-formatting-post-commit-hook
