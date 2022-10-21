@@ -1,6 +1,6 @@
 {
   "name": "git-blame-ignore-style-formatting-post-commit-hook",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "post-commit hook to add an entry to .git-blame-ignore-revs for `style: foo` commits",
   "main": "index.js",
   "bin": {
