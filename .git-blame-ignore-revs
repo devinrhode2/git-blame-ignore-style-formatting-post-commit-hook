@@ -9,3 +9,6 @@
 # style: cleanup comments
 8ed1301616cf6962bbc10fc47699ef573ebcfcde
 
+# style: Group `incremental: true` near `compileOnSave`
+7968e09b3a50e27615b312275f05e4eab2d18c1f
+
