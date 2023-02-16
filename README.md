@@ -91,4 +91,4 @@ When/if you are rebasing, and need to refresh the sha, you can simply `reword` y
 +drop c2d2cf6 chore(git-blame): Ignore previous style change
 ```
 
-However, it may be best to wait till changes are merged to master/main before adding commit sha's to `.git-blame-ignore-revs`. This way, you don't have to worry about refreshing the sha when your mass cleanup commit sha changes :)
+It's also totally ok to wait till changes are merged to master/main before adding commit sha's to `.git-blame-ignore-revs`. This way, you don't have to worry about refreshing the sha when your mass cleanup commit sha changes. However, the goal of this git hook IS to automatically add entries to `.git-blame-ignore-revs` for you.
