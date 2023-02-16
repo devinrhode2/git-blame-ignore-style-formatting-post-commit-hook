@@ -81,11 +81,14 @@ When you make a `style: ` commit, it will now show something like this after you
 Adding .git-blame-ignore-revs entry for last commit. Reason: Starts with "style:"
 ```
 
-When/if you are rebasing, and need to refresh the sha, you can simply `reword` your `style: ` commits to re-run the `post-commit` hook
+When/if you are rebasing, and need to refresh the sha, you can simply `reword` your `style: ` commits to re-run the `post-commit` hook:
 
 ```diff
+// git-rebase-todo
 -pick 7713c93 style: cleanup comments
 -pick c2d2cf6 chore(git-blame): Ignore previous style change
 +reword 7713c93 style: cleanup comments
 +drop c2d2cf6 chore(git-blame): Ignore previous style change
 ```
+
+However, it may be best to wait till changes are merged to master/main before adding commit sha's to `.git-blame-ignore-revs`. This way, you don't have to worry about refreshing the sha when your mass cleanup commit sha changes :)
